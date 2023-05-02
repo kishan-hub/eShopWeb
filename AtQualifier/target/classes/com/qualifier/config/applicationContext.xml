@@ -1,0 +1,15 @@
+  <beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+ 
+ <bean name="chip1" class="com.qualifier.bean.Chip">
+    <property name="chipName" value="Intel-core-processer version 3"/>
+ </bean>
+  <bean name="chip2" class="com.qualifier.bean.Chip">
+    <property name="chipName" value="Ryzon-core-processer version 5"/>
+ </bean>
+<bean name="robot" class="com.qualifier.bean.Robot">
+ <property name="chip" ref="chip1"/>
+</bean>
+ </beans>
