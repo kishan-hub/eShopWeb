@@ -1,0 +1,2 @@
+webProject created in git repository
+create the mvn project using maven-archetype-webapp 
